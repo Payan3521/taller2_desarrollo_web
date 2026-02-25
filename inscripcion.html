@@ -27,11 +27,17 @@
         </p>
 
         <p>
-            <label>Edad (anos): <input type="number" name="edad_anios" min="0" max="18" size="4"></label>
+            <label>Fecha de nacimiento:
+                <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" onchange="calcularEdad()">
+            </label>
             &nbsp;&nbsp;
-            <label>Meses: <input type="number" name="edad_meses" min="0" max="11" size="4"></label>
+            <label>Edad (anos):
+                <input type="number" id="edad_anios" name="edad_anios" size="4" readonly>
+            </label>
             &nbsp;&nbsp;
-            <label>Fecha de nacimiento: <input type="date" name="fecha_nacimiento"></label>
+            <label>Meses:
+                <input type="number" id="edad_meses" name="edad_meses" size="4" readonly>
+            </label>
         </p>
 
         <p>
@@ -98,7 +104,7 @@
         </p>
 
         <p>
-            <label>Domicilio: <input type="text" name="domicilio" size="60"></label>
+            <label>Direccion: <input type="text" name="domicilio" size="60"></label>
         </p>
 
         <p>
@@ -110,6 +116,35 @@
         </p>
 
     </form>
+
+    <script>
+        function calcularEdad() {
+            var fechaInput = document.getElementById('fecha_nacimiento').value;
+            if (!fechaInput) return;
+
+            var hoy = new Date();
+            var nacimiento = new Date(fechaInput);
+
+            var anios = hoy.getFullYear() - nacimiento.getFullYear();
+            var meses = hoy.getMonth() - nacimiento.getMonth();
+
+            if (meses < 0) {
+                anios--;
+                meses += 12;
+            }
+
+            if (hoy.getDate() < nacimiento.getDate()) {
+                meses--;
+                if (meses < 0) {
+                    anios--;
+                    meses += 12;
+                }
+            }
+
+            document.getElementById('edad_anios').value = anios;
+            document.getElementById('edad_meses').value = meses;
+        }
+    </script>
 
 </body>
 
