@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Ficha de Inscripcion</title>
+</head>
+
+<body>
+
+    <h1>Ficha de Inscripcion</h1>
+
+    <p>
+        <a href="index.html">Inicio / Listado</a> |
+        <a href="inf_familiar.html">Informacion Familiar</a> |
+        <a href="inf_med_niño.html">Informacion Medica</a>
+    </p>
+
+    <hr>
+
+    <form action="#" method="post">
+
+        <p>
+            <label>Nombre completo:
+                <input type="text" name="nombre_completo" size="50" required>
+            </label>
+        </p>
+
+        <p>
+            <label>Edad (anos): <input type="number" name="edad_anios" min="0" max="18" size="4"></label>
+            &nbsp;&nbsp;
+            <label>Meses: <input type="number" name="edad_meses" min="0" max="11" size="4"></label>
+            &nbsp;&nbsp;
+            <label>Fecha de nacimiento: <input type="date" name="fecha_nacimiento"></label>
+        </p>
+
+        <p>
+            <label>Lugar de nacimiento (Departamento):
+                <select name="lugar_nacimiento">
+                    <option value="">-- Seleccione --</option>
+                    <option>Amazonas</option>
+                    <option>Antioquia</option>
+                    <option>Arauca</option>
+                    <option>Atlantico</option>
+                    <option>Bolivar</option>
+                    <option>Boyaca</option>
+                    <option>Caldas</option>
+                    <option>Caqueta</option>
+                    <option>Casanare</option>
+                    <option>Cauca</option>
+                    <option>Cesar</option>
+                    <option>Choco</option>
+                    <option>Cordoba</option>
+                    <option>Cundinamarca</option>
+                    <option>Guainia</option>
+                    <option>Guaviare</option>
+                    <option>Huila</option>
+                    <option>La Guajira</option>
+                    <option>Magdalena</option>
+                    <option>Meta</option>
+                    <option>Narino</option>
+                    <option>Norte de Santander</option>
+                    <option>Putumayo</option>
+                    <option>Quindio</option>
+                    <option>Risaralda</option>
+                    <option>San Andres y Providencia</option>
+                    <option>Santander</option>
+                    <option>Sucre</option>
+                    <option>Tolima</option>
+                    <option>Valle del Cauca</option>
+                    <option>Vaupes</option>
+                    <option>Vichada</option>
+                    <option>Bogota D.C.</option>
+                </select>
+            </label>
+            &nbsp;&nbsp;
+            <label>Grado que ingresa:
+                <select name="grado">
+                    <option value="">-- Seleccione --</option>
+                    <option>Maternal</option>
+                    <option>Pre-Jardin</option>
+                    <option>Jardin</option>
+                    <option>Pre-Kinder</option>
+                    <option>Kinder</option>
+                    <option>Transicion</option>
+                </select>
+            </label>
+            &nbsp;&nbsp;
+            <label>Seccion:
+                <select name="seccion">
+                    <option value="">--</option>
+                    <option>A</option>
+                    <option>B</option>
+                    <option>C</option>
+                    <option>D</option>
+                </select>
+            </label>
+        </p>
+
+        <p>
+            <label>Domicilio: <input type="text" name="domicilio" size="60"></label>
+        </p>
+
+        <p>
+            <label>Telefonos: <input type="tel" name="telefonos" size="40"></label>
+        </p>
+
+        <p>
+            <input type="submit" value="Guardar Inscripcion">
+        </p>
+
+    </form>
+
+</body>
+
+</html>

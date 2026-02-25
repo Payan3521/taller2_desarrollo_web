@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Informacion Familiar</title>
+</head>
+
+<body>
+
+    <h1>Informacion Familiar</h1>
+
+    <p>
+        <a href="index.html">Inicio / Listado</a> |
+        <a href="inscripcion.html">Ficha de Inscripcion</a> |
+        <a href="inf_med_niño.html">Informacion Medica</a>
+    </p>
+
+    <hr>
+
+    <form action="#" method="post">
+
+        <table border="1" cellpadding="8" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Madre</th>
+                    <th>Padre</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <p><label>Nombre: <input type="text" name="madre_nombre" size="30"></label></p>
+                        <p><label>Fecha de nacimiento: <input type="date" name="madre_nacimiento"></label></p>
+                        <p><label>Domicilio: <input type="text" name="madre_domicilio" size="30"></label></p>
+                        <p><label>Celular: <input type="tel" name="madre_celular" size="20"></label></p>
+                        <p><label>Ocupacion:
+                                <select name="madre_ocupacion">
+                                    <option value="">-- Seleccione --</option>
+                                    <option>Empleada(o) publica(o)</option>
+                                    <option>Empleada(o) privada(o)</option>
+                                    <option>Independiente / Cuenta propia</option>
+                                    <option>Comerciante</option>
+                                    <option>Docente</option>
+                                    <option>Medica(o) / Enfermera(o)</option>
+                                    <option>Ingeniera(o)</option>
+                                    <option>Abogada(o)</option>
+                                    <option>Agricultor(a)</option>
+                                    <option>Ama de casa</option>
+                                    <option>Desempleada(o)</option>
+                                    <option>Estudiante</option>
+                                    <option>Otro</option>
+                                </select>
+                            </label></p>
+                        <p><label>Lugar de trabajo: <input type="text" name="madre_trabajo" size="25"></label></p>
+                        <p><label>Telefono de trabajo: <input type="tel" name="madre_tel_trabajo" size="20"></label></p>
+                    </td>
+                    <td>
+                        <p><label>Nombre: <input type="text" name="padre_nombre" size="30"></label></p>
+                        <p><label>Fecha de nacimiento: <input type="date" name="padre_nacimiento"></label></p>
+                        <p><label>Domicilio: <input type="text" name="padre_domicilio" size="30"></label></p>
+                        <p><label>Celular: <input type="tel" name="padre_celular" size="20"></label></p>
+                        <p><label>Ocupacion:
+                                <select name="padre_ocupacion">
+                                    <option value="">-- Seleccione --</option>
+                                    <option>Empleada(o) publica(o)</option>
+                                    <option>Empleada(o) privada(o)</option>
+                                    <option>Independiente / Cuenta propia</option>
+                                    <option>Comerciante</option>
+                                    <option>Docente</option>
+                                    <option>Medica(o) / Enfermera(o)</option>
+                                    <option>Ingeniera(o)</option>
+                                    <option>Abogada(o)</option>
+                                    <option>Agricultor(a)</option>
+                                    <option>Ama de casa</option>
+                                    <option>Desempleada(o)</option>
+                                    <option>Estudiante</option>
+                                    <option>Otro</option>
+                                </select>
+                            </label></p>
+                        <p><label>Lugar de trabajo: <input type="text" name="padre_trabajo" size="25"></label></p>
+                        <p><label>Telefono de trabajo: <input type="tel" name="padre_tel_trabajo" size="20"></label></p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <br>
+
+        <fieldset>
+            <legend><b>Situacion Familiar:</b></legend>
+            <label><input type="radio" name="situacion" value="casados"> Casados</label> &nbsp;
+            <label><input type="radio" name="situacion" value="unidos"> Unidos</label> &nbsp;
+            <label><input type="radio" name="situacion" value="separados"> Separados</label> &nbsp;
+            <label><input type="radio" name="situacion" value="divorciados"> Divorciados</label> &nbsp;
+            <label><input type="radio" name="situacion" value="unico"> Unico</label>
+        </fieldset>
+
+        <br>
+
+        <p>
+            <input type="submit" value="Guardar Informacion Familiar">
+        </p>
+
+    </form>
+
+</body>
+
+</html>

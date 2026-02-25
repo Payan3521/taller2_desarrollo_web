@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Informacion Medica del nino o nina</title>
+</head>
+
+<body>
+
+    <h1>Informacion Medica del nino o niña</h1>
+
+    <p>
+        <a href="index.html">Inicio / Listado</a> |
+        <a href="inscripcion.html">Ficha de Inscripcion</a> |
+        <a href="inf_familiar.html">Informacion Familiar</a>
+    </p>
+
+    <hr>
+
+    <form action="#" method="post">
+
+        <p>
+            <label>Tipo de sangre:
+                <select name="tipo_sangre">
+                    <option value="">-- Seleccione --</option>
+                    <option>A+</option>
+                    <option>A-</option>
+                    <option>B+</option>
+                    <option>B-</option>
+                    <option>AB+</option>
+                    <option>AB-</option>
+                    <option>O+</option>
+                    <option>O-</option>
+                </select>
+            </label>
+            &nbsp;&nbsp;
+            <label>Padece de asma:
+                <select name="asma">
+                    <option value="">-- Seleccione --</option>
+                    <option>Si</option>
+                    <option>No</option>
+                </select>
+            </label>
+            &nbsp;&nbsp;
+            <label>Padece de convulsiones:
+                <select name="convulsiones">
+                    <option value="">-- Seleccione --</option>
+                    <option>Si</option>
+                    <option>No</option>
+                </select>
+            </label>
+        </p>
+
+        <p>
+            <label>Otros: <input type="text" name="otros" size="60"></label>
+        </p>
+
+        <p>
+            <label>Cuenta con sus vacunas al dia:
+                <select name="vacunas">
+                    <option value="">-- Seleccione --</option>
+                    <option>Si</option>
+                    <option>No</option>
+                </select>
+            </label>
+            &nbsp; (Presentar carnet)
+        </p>
+
+        <p>
+            <label>Alergias: <input type="text" name="alergias" size="60"></label>
+        </p>
+
+        <hr>
+
+        <p>
+            <label>Enfermedades Actuales: <input type="text" name="enfermedades" size="60"></label>
+        </p>
+
+        <p>
+            <label>Toma medicamentos: <input type="text" name="medicamentos" size="60"></label>
+        </p>
+
+        <p>
+            <label>Observaciones:<br>
+                <textarea name="observaciones" rows="4" cols="70"></textarea>
+            </label>
+        </p>
+
+        <p>
+            <input type="submit" value="Guardar Informacion Medica">
+        </p>
+
+    </form>
+
+</body>
+
+</html>
